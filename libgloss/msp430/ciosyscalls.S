@@ -26,11 +26,11 @@
 	.pushsection .text.\name1,"ax",@progbits
 	.p2align 1
 	.weak	\name1
-	.global	\name1
+/*	.global	\name1*/
 \name1:
   .ifnc \name2,foo
 	.weak	\name2
-	.global	\name2
+/*	.global	\name2*/
 \name2:
   .endif
 .endm
